@@ -24,11 +24,10 @@ if (argv.length < 3) {
   // Coloring the pattern with the random color and HEX
   console.log(createPattern(colorChalk, randColor));
 }
-  // accepting user input, starting index 2 for hue and 3 for luminosity
-  else {
+// accepting user input, starting index 2 for hue and 3 for luminosity
+else {
   const hue = argv[2];
   const luminosity = argv[3] || 'light';
-
 
   // Generate a HEX color based on user input
   const hexOfColor = randomColor({ luminosity, hue });
