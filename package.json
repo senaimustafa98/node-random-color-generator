@@ -1,5 +1,5 @@
 {
-  "name": "node-random-emoji-generator",
+  "name": "node-random-color-generator",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -21,6 +21,9 @@
   "dependencies": {
     "chalk": "^5.3.0",
     "color-2-name": "^1.4.4",
-    "color-string": "^1.9.1"
+    "color-name": "^2.0.0",
+    "color-namer": "^1.4.0",
+    "color-string": "^1.9.1",
+    "randomcolor": "^0.6.2"
   }
 }
