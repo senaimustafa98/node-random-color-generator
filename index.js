@@ -3,16 +3,16 @@ import randomColor from 'randomcolor';
 import chalk from 'chalk';
 
 // the pattern that needs to be colored
-const createPattern = (borderChalk, hexOfColor) => `
-${borderChalk('#'.repeat(34))}
-${borderChalk('#'.repeat(34))}
-${borderChalk('#'.repeat(34))}
-${borderChalk('#'.repeat(3)) + ' '.repeat(28) + borderChalk('#'.repeat(3))}
-${borderChalk('#'.repeat(3)) + ' '.repeat(7) + chalk.bgHex(hexOfColor).white(` ${hexOfColor} `) + ' '.repeat(12) + borderChalk('#'.repeat(3))}
-${borderChalk('#'.repeat(3)) + ' '.repeat(28) + borderChalk('#'.repeat(3))}
-${borderChalk('#'.repeat(34))}
-${borderChalk('#'.repeat(34))}
-${borderChalk('#'.repeat(34))}
+const createPattern = (borderColor, hexOfColor) => `
+${borderColor('#'.repeat(34))}
+${borderColor('#'.repeat(34))}
+${borderColor('#'.repeat(34))}
+${borderColor('#'.repeat(3)) + ' '.repeat(28) + borderColor('#'.repeat(3))}
+${borderColor('#'.repeat(3)) + ' '.repeat(7) + chalk.bgHex(hexOfColor).white(` ${hexOfColor} `) + ' '.repeat(12) + borderColor('#'.repeat(3))}
+${borderColor('#'.repeat(3)) + ' '.repeat(28) + borderColor('#'.repeat(3))}
+${borderColor('#'.repeat(34))}
+${borderColor('#'.repeat(34))}
+${borderColor('#'.repeat(34))}
 `;
 
 // Checking for input
@@ -31,8 +31,8 @@ if (argv.length < 3) {
 
 
   // Generate a HEX color based on user input
-  const hexOfColor = randomColor({ luminosity: luminosity, hue: hue });
-  const colorChalk = chalk.bgHex(hexOfColor);
+  const hexOfColor = randomColor({ luminosity, hue });
+  const borderColor = chalk.bgHex(hexOfColor);
   // color the pattern with the generated color and HEX value
-  console.log(createPattern(colorChalk, hexOfColor));
+  console.log(createPattern(borderColor, hexOfColor));
 }
