@@ -8,7 +8,7 @@ ${borderColor('#'.repeat(34))}
 ${borderColor('#'.repeat(34))}
 ${borderColor('#'.repeat(34))}
 ${borderColor('#'.repeat(3)) + ' '.repeat(28) + borderColor('#'.repeat(3))}
-${borderColor('#'.repeat(3)) + ' '.repeat(7) + chalk.hex(hexOfColor)(` ${hexOfColor} `) +' '.repeat(12) + borderColor('#'.repeat(3))}
+${borderColor('#'.repeat(3)) + ' '.repeat(7) + chalk.hex(hexOfColor)(` ${hexOfColor} `) + ' '.repeat(12) + borderColor('#'.repeat(3))}
 ${borderColor('#'.repeat(3)) + ' '.repeat(28) + borderColor('#'.repeat(3))}
 ${borderColor('#'.repeat(34))}
 ${borderColor('#'.repeat(34))}
